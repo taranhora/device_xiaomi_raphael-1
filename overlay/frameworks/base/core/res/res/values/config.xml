@@ -180,6 +180,13 @@
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">128</integer>
 
+    <!-- All the capabilities of the LEDs on this device, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following capabilities present:
+         For example, a device with notification and battery lights that supports
+         pulsating and RGB control would set this config to 75. -->
+    <integer name="config_deviceLightCapabilities">232</integer>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
