@@ -159,5 +159,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-06-01
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/raphael/BoardConfigVendor.mk
