@@ -40,11 +40,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.camera.motor@1.0-service.xiaomi_raphael
 
-# Common init scripts
-PRODUCT_PACKAGES += \
-    init.mi_thermald.rc \
-    init.qcom.rc
-
 # Display
 PRODUCT_PACKAGES += \
     libvulkan \
@@ -121,6 +116,45 @@ PRODUCT_PACKAGES += \
     rcs_service_aidl.xml \
     rcs_service_api \
     rcs_service_api.xml
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    capture_headset.sh \
+    capture.sh \
+    init.class_late.sh \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.crashdata.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.fm.sh \
+    init.qti.ims.sh \
+    init.qti.qseecomd.sh \
+    playback_headset.sh \
+    playback.sh \
+    qca6234-service.sh \
+    setup_headsetmic2headphone.sh \
+    setup_mainmic2headphone.sh \
+    setup_topmic2headphone.sh \
+    teardown_loopback.sh \
+    tp_data_collect.sh \
+    tp_selftest.sh \
+    init.msm.usb.configfs.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.target.rc \
+    fstab.qcom \
+    ueventd.qcom.rc \
+    init.mi_thermald.rc
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
